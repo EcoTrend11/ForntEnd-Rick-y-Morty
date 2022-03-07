@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const CharacterCard = ({e}) =>{
     return(
         <div>
-            <Link to='/character_detail/:id'>            
+            <Link to={'/character_detail/' + e.id}>            
                 <img
                     src={e.image} alt="img not found"
                 />
