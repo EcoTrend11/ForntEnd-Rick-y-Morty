@@ -1,9 +1,10 @@
 import CharacterCard from "./CharacterCard"
+import style from "./CharacterGrid.module.css"
 
 const CharacterGrid = ({data}) =>{
     
     return(
-        <div>
+        <div className={style.character__container}>
             { data.map( e => <CharacterCard e={e} key={e.id}/>)}
         </div>
     )

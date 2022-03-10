@@ -1,4 +1,5 @@
 import axios from "axios";
+import style from "./Pagination.module.css"
 
 const Pagination = ({setData , next , prev ,setNext, setPrev}) => {
     
@@ -28,15 +29,17 @@ const Pagination = ({setData , next , prev ,setNext, setPrev}) => {
 
 
     return(
-        <div>
-            {prev?(
-                <button onClick={handlePrev}>prev</button>
-            ) : null
-            }
-            {next?(
-                <button onClick={handleNext}>next</button>
-            ) : null
-            }
+        <div className={style.container}>
+            <div className={style.container__button}>
+                {prev?(
+                    <button className={style.button} onClick={handlePrev}>Prev</button>
+                ) : null
+                }
+                {next?(
+                    <button className={style.button} onClick={handleNext}>Next</button>
+                ) : null
+                }
+            </div>           
         </div>
     )
 }

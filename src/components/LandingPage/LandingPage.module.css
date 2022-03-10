@@ -1,0 +1,34 @@
+.container{
+    background-color: rgba(134, 134, 134, 0.445);
+    max-width: 600px;
+    height:450px;
+    margin: 5% auto;
+    padding-top: 25px;
+    text-align: center; 
+}
+
+.title{
+    font-size: 55px;
+    color: #00afc8;
+}
+.link{
+    display: block;
+    background: url('../../../img/button.jpg') no-repeat center center ;
+    height:40px;
+    width:150px;
+    margin: 60px auto;
+    text-decoration: none;
+    border-radius: 20px;
+    box-sizing: content-box;
+    font-weight: bolder;
+    color: #000607;
+    font-size: 30px;
+}
+
+.texto{
+    display:block;
+    font-weight: bolder;
+    color:#000607;
+    width: 450px;
+    margin: 0 auto;    
+}

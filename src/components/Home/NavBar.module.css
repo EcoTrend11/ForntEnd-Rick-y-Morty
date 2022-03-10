@@ -1,0 +1,13 @@
+.container{
+    background-color: red;
+    padding: 15px 0;
+    width: 1200px ;
+    display:flex
+}
+.form__container{
+    background-color: aqua;
+    width: 100px;
+    height: 100px
+
+}
+

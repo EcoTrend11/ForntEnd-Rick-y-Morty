@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios"
+import style from "./NavBar.module.css"
 
 const NavBar = ({setData ,setNext, setPrev}) =>{
 
@@ -20,11 +21,13 @@ const NavBar = ({setData ,setNext, setPrev}) =>{
 
     console.log(value)
     return(
-        <div>
-            <form onSubmit={(e)=> submit(e)}>
-                <input type= 'text' onChange={(e)=>onChange(e)} value={value}></input>
-                <button>search</button>
-            </form>
+        <div className={style.container}>
+            <div className={style.form__container}> 
+                {/* <form onSubmit={(e)=> submit(e)}>
+                    <input className={style.input} type= 'text' onChange={(e)=>onChange(e)} value={value}></input>
+                    <button className={style.button}>search</button>
+                </form> */}
+            </div>
         </div>
     )
 }

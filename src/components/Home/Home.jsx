@@ -4,6 +4,7 @@ import NavBar from "./NavBar"
 import CharacterGrid from "./CharacterGrid"
 import Pagination from "./Pagination"
 
+
 const Home = () =>{
      
     const [next, setNext] = useState()
@@ -29,7 +30,7 @@ const Home = () =>{
     return(
         <div>
             <NavBar setData={setData} setPrev={setPrev} setNext={setNext}/>
-            <Pagination setData={setData} next={next} prev={prev} setPrev={setPrev} setNext={setNext} />
+            <Pagination  setData={setData} next={next} prev={prev} setPrev={setPrev} setNext={setNext} />
             <CharacterGrid data={data}/>
         </div>
     )

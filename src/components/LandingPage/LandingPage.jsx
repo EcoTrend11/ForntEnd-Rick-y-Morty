@@ -1,14 +1,21 @@
 import { Link } from "react-router-dom"
+import  style from"./LandingPage.module.css"
 
 const LandingPage = () =>{
     return(
         <div>
-            <div>
-                bienvenido a rick y morty app
+            <div className={style.container}>
+                <h3 className={style.title}>
+                    Bienvenido a Rick y Morty App
+                </h3>
+                <p className={style.texto}>Aplicacion creada con React consumiendo una api externa de Rick y Morty , espero que sea de su agrado
+                </p>
+                <Link to='/home' className={style.link}>
+                    <div>
+                        GO !!!
+                    </div>
+                </Link>
             </div>
-            <Link to = '/home'>
-                ir a home
-            </Link>
         </div>
     )
 }

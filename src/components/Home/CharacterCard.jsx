@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom"
+import style from "./CharacterCard.module.css"
 
 const CharacterCard = ({e}) =>{
     return(
-        <div>
-            <Link to={'/character_detail/' + e.id}>            
-                <img
+        <div className={style.container}>
+            <Link className={style.link} to={'/character_detail/' + e.id}>            
+                <img className={style.img}
                     src={e.image} alt="img not found"
                 />
-                <div>Name:    {e.name}</div>
+                <h3 className={style.tittle}>{e.name}</h3>
             </Link>
         </div>
     )
