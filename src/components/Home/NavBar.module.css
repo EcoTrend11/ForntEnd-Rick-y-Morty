@@ -1,13 +1,40 @@
-.container{
-    background-color: red;
-    padding: 15px 0;
-    width: 1200px ;
-    display:flex
-}
 .form__container{
-    background-color: aqua;
-    width: 100px;
-    height: 100px
+    height:80px;
+    width: 430px;
+    margin:  0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    height:30px;
+    width: 350px;
+    font-size: 20px;
+    outline: none;
+    background-color: white;
+    border:none;
 
+}
+
+.container{
+    background-color: #202020;
+}
+
+.button{
+    height:32px;
+    width:50px;
+    border:none;
+    background-color:white;
+    cursor: pointer;
+}
+
+.input__container{
+    width: 1230px;
+    margin: 0 auto;
+    display:flex;
+}
+
+.fa-solid fa-magnifying-glass{
+    color: white;
 }
 

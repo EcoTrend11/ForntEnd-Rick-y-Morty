@@ -22,11 +22,11 @@ const NavBar = ({setData ,setNext, setPrev}) =>{
     console.log(value)
     return(
         <div className={style.container}>
-            <div className={style.form__container}> 
-                {/* <form onSubmit={(e)=> submit(e)}>
+            <div className={style.input__container}> 
+                <form className={style.form__container} onSubmit={(e)=> submit(e)}>
                     <input className={style.input} type= 'text' onChange={(e)=>onChange(e)} value={value}></input>
-                    <button className={style.button}>search</button>
-                </form> */}
+                    <button className={style.button}><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </div>
         </div>
     )

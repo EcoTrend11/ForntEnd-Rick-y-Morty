@@ -11,7 +11,7 @@ const LandingPage = () =>{
                 <p className={style.texto}>Aplicacion creada con React consumiendo una api externa de Rick y Morty , espero que sea de su agrado
                 </p>
                 <Link to='/home' className={style.link}>
-                    <div>
+                    <div className={style.button}>
                         GO !!!
                     </div>
                 </Link>

@@ -8,8 +8,17 @@ import Home from './components/Home/Home';
 import CharacterDetail from "./components/CharacterDetail/CharacterDetil";
 import { Link } from "react-router-dom";
 
+
 function App() {
+
+  async function prueba () {
+    console.log("funcion")
+    console.log("result")
+  }
+  prueba()
+
   return (
+
     <Router>
         <Link to='/home'> Rick y Morty </Link>
       <Switch>

@@ -1,9 +1,8 @@
 .container{
     background-color: rgba(134, 134, 134, 0.445);
     max-width: 600px;
-    height:450px;
     margin: 5% auto;
-    padding-top: 25px;
+    padding: 25px;
     text-align: center; 
 }
 
@@ -23,12 +22,22 @@
     font-weight: bolder;
     color: #000607;
     font-size: 30px;
+    transition: 0.75s;
+}
+.link:hover{
+    transform:scale(1.1);
 }
 
 .texto{
     display:block;
     font-weight: bolder;
-    color:#000607;
-    width: 450px;
+    color:#ffffff;
     margin: 0 auto;    
+   
+}
+
+@media (max-width:660px){
+    .title{
+        font-size: 30px;
+    }
 }
